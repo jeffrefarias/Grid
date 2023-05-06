@@ -5,35 +5,51 @@
     box-sizing: border-box;
 }
 
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header  header' 
+    'sidebar main' 
+    'footer footer';
+    grid-template-columns: 1fr 6fr;
+    height: 100vh;
+   
+}
+
+
 .header{
     grid-area: header;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    height: 5em;       
+    height: 100%;       
 }
 
 .header h1{
     font-family: 'Rouge Script', cursive;
-    /* color:  #FFD700; */
     color: white;
     font-size: 3.5em;
 }
 
 .main{
     grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* flex-wrap: wrap; */
     background-color: rgb(218, 217, 217);  
+    height: 100%;
 }
 
 .sidebar{
     grid-area: sidebar; 
     background-color: rgb(218, 217, 217);  
     height: 100%;
-    /* border: 1px solid red; */
+    /* min-width: 100%; */
 }
+
+
 
 ul{
     display: flex;
@@ -41,10 +57,13 @@ ul{
     text-align: center;
     gap: 10px;
     padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 li{
     font-size: 1.5em;
+    list-style: none;
 }
 
 li:hover{
@@ -65,10 +84,10 @@ span{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    /* border: 1px solid black; */
-    margin: 60px;
+    margin: 20px;
     background-color: white;
     max-width: 400px;
+    width: 400px;
 }
 
 .contenedorimg p{
@@ -85,13 +104,8 @@ button{
 img{
     width: 100%;
     height: 300px;
-    /* max-width: 100%; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-
-
-
-
 
 
 .footer{
@@ -101,20 +115,13 @@ img{
     align-items: center;
     color: white;
     background-color: rgb(0, 0, 0);
-    height: 5em;
+    height: 100%;
+    padding: 0.5em;
     font-size: 1.5em;
 }
 
 
 
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-    'header  header' 
-    'sidebar main' 
-    'footer footer';
-    grid-template-columns: 1fr 6fr;
-}
 
 
 
