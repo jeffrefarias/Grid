@@ -5,24 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/main.css">
+     <!-- Este link se usa para los iconos de chat -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="header box"><h1>Ameowzing Jewels</h1></div>
-        <div class="sidebar box">
-          <nav>
-            <ul>
-                <p><strong>Categorías</strong></p>
-                <li>Relojes <span>(13)</span></li> 
-                <li>Brazaletes <span>(6)</span></li>
-                <li>Anillos <span>(15)</span></li>
-                <li>Collares <span>(7)</span></li>
-            </ul>
-          </nav>
+        <div class="header box">
+            <h1>Ameowzing Jewels</h1>
+            <i class="bi bi-list Hambur"></i>
         </div>
+        <!-- Menu Desktop en mobile se oculta -->
+        <div class="sidebar box">
+            <nav>
+                <ul>
+                    <p><strong>Categorías</strong></p>
+                    <li>Relojes <span>(13)</span></li>
+                    <li>Brazaletes <span>(6)</span></li>
+                    <li>Anillos <span>(15)</span></li>
+                    <li>Collares <span>(7)</span></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Search -->
+        <div class="SearchContainer">
+            <p>Ordernar Por:</p>
+            <form>
+                <select class="botonBuscar" name="search">
+                    <option value="Titulo">Precio</option>
+                    <option value="Rango2"></option>
+                    <option value="Rango3"></option>
+                    <option value="Rango4"></option>
+                </select>
+            </form>
+        </div>
+        <!-- Contenedor principal de las imagenes -->
         <div class="main box">
+           
             <div class="contenedorimg">
                 <img src="../assets/img/joy1.png" alt="">
                 <h1>Anillo de Compromiso Clásico</h1>
@@ -50,15 +70,36 @@
 
             </div>
             <div class="contenedorimg">
-                <img src="../assets/img/joy5.png" alt="Anillo de Diamante">              
+                <img src="../assets/img/joy5.png" alt="Anillo de Diamante">
                 <h1>Glamira Anillo Marica</h1>
                 <p>$1.123.369</p>
                 <button> Comprar</button>
 
             </div>
         </div>
+        <div class="paginado">
+            <nav>
+                <ul>
+                    <i class="bi bi-caret-left"></i>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <i class="bi bi-caret-right"></i>
+                </ul>
+              </nav>
+        </div>
+      
         <div class="footer box">
-            <a href="https://github.com/jeffrefarias" target="_blank"> <p>@Ameowzing</p></a>           
+            <div>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+            </div>        
+            <a href="https://github.com/jeffrefarias" target="_blank">
+                <p>@Ameowzing</p>
+            </a>
+            <p>Todos los derechos Reservados</p>
         </div>
     </div>
 </body>
