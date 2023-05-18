@@ -30,10 +30,15 @@
     height: 100%;       
 }
 
+.imagenSVG{
+    margin-right: 10px;
+}
+
 .header h1{
     font-family: 'Rouge Script', cursive;
     color: white;
     font-size: 3.5em;
+   
 }
 
 .SearchContainer{
@@ -64,7 +69,7 @@
 .main{
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     background-color: rgb(218, 217, 217);  
     height: 100%;
     
@@ -152,6 +157,7 @@ img{
     list-style: none;
     text-decoration: none;
     color: black;
+   
 }
 
 
@@ -169,6 +175,33 @@ img{
     font-size: 1.5em;
     /* border: 1px solid red; */
 }
+
+.footer i{
+    cursor: pointer;
+}
+
+
+#Vestido{
+    transform: translate(0%,100%);
+    animation: moveFlower 1s .5s both;
+}
+
+#Flor1{
+    transform: translate(-16%);
+    animation: moveFlower 1s .5s both;
+}
+
+#Flor2{
+    transform: translate(20%);
+    animation: moveFlower 1s .5s both;
+}
+
+@keyframes moveFlower{
+    100%{
+        transform: unset;
+    }
+}
+
 /* AQUI EL RESPONSIVE DE 1200 PX */
 
 /* AQUI EL RESPONSIVE DE 576 PX */
@@ -182,27 +215,32 @@ img{
         'main main'
         'paginado paginado' 
         'footer footer';
-        height: 100vh;   
+        height: 100vh;
+           
     }
 
     .header{
         grid-area: header;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         background-color: rgb(0, 0, 0);  
         color: white; 
     }
 
+    .header_titulo{
+        display: flex;
+    }
+
     .header h1{
         font-family: 'Rouge Script', cursive;
-        font-size: 3.5em;
-        padding: 20px 0px 20px 30px;
+        font-size: 1.8em;
+        padding-left: 10px;
     }
 
     .Hambur{
     font-size: 2em;
-       padding-right: 1.5em;
+    padding-left: 1.5em;
     }
 
     .Hambur:hover{
@@ -244,6 +282,7 @@ img{
       margin: 0;
       max-width: 576px;
     background-color: rgb(218, 217, 217);  
+
     }
 
     
@@ -269,6 +308,12 @@ button{
     color: white;
     background-color: rgb(0, 0, 0);
     font-size: 1.2em;
+    transition:  0.3s ease-out;
+}
+
+button:hover{
+    background-color: blueviolet;
+    /* color: red ; */
 }
 
 .paginado{
@@ -308,8 +353,33 @@ button{
         font-size: 1.5em;
     } 
 
-   
-  }
+    
+
+    #Vestido{
+        transform: translate(0%,100%);
+        animation: moveFlower 1s .5s both;
+    }
+    
+    #Flor1{
+        transform: translate(-16%);
+        animation: moveFlower 1s .5s both;
+    }
+    
+    #Flor2{
+        transform: translate(20%);
+        animation: moveFlower 1s .5s both;
+    }
+    
+    @keyframes moveFlower{
+        100%{
+            transform: unset;
+        }
+    }
+    
+
+  
+
+}
 
 
 
