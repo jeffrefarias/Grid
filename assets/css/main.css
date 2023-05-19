@@ -193,17 +193,17 @@ img:hover{
 
 #Vestido{
     transform: translate(0%,100%);
-    animation: moveFlower 1s .5s both;
+    animation: moveFlower 3s .5s both;
 }
 
 #Flor1{
     transform: translate(-16%);
-    animation: moveFlower 1s .5s both;
+    animation: moveFlower 2s .5s both;
 }
 
 #Flor2{
     transform: translate(20%);
-    animation: moveFlower 1s .5s both;
+    animation: moveFlower 2s .5s both;
 }
 
 @keyframes moveFlower{
@@ -379,17 +379,17 @@ img:hover{
 
     #Vestido{
         transform: translate(0%,100%);
-        animation: moveFlower 1s .5s both;
+        animation: moveFlower 3s .5s both;
     }
     
     #Flor1{
         transform: translate(-16%);
-        animation: moveFlower 1s .5s both;
+        animation: moveFlower 2s .5s both;
     }
     
     #Flor2{
         transform: translate(20%);
-        animation: moveFlower 1s .5s both;
+        animation: moveFlower 2s .5s both;
     }
     
     @keyframes moveFlower{
